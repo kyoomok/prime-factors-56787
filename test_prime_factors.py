@@ -4,6 +4,7 @@ from prime_factors import PrimeFactor
 
 
 class TestPrimeFactor(TestCase):
-    def test_calc(self):
+    def test_prime_factor_of_1(self):
         pf = PrimeFactor()
-        self.assertEqual(pf.of(1), 1)
+        self.assertEqual([], pf.of(1))
+
