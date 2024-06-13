@@ -8,3 +8,8 @@ class TestPrimeFactor(TestCase):
         pf = PrimeFactor()
         self.assertEqual([], pf.of(1))
 
+
+    def test_prime_factor_of_2(self):
+        pf = PrimeFactor()
+        self.assertEqual([2], pf.of(2))
+
